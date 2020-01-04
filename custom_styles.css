@@ -2,9 +2,9 @@
 @media only screen and (min-width: 770px) {
 	.nav-main {
 		background: rgba(0,0,0,0.3);
-  }
+	}
 
-  .nav-main ul.navigation::before {
+	.nav-main ul.navigation::before {
 		content: "";
 		position: absolute;
 		display: inline-block;
@@ -18,14 +18,14 @@
 		background-image: url(http://www.stadtratsbegruenung.de/wp/wp-content/uploads/2019/12/sonnenblume_auf_transparent_hellesgelb-01.png);
 		background-size: contain;
 		background-repeat: no-repeat;
-  }
+	}
 	
 	.nav-main ul.navigation > li:first-of-type {
 		position: absolute;
 		top: 50%;
 		left: 52px;
 		transform: translateY(-50%);
-  }
+	}
 	
 	.nav-main ul.navigation > li:first-of-type a {
 		color: #fe0;
@@ -93,12 +93,32 @@
 }
 /* Termine END */
 
+/* Personenliste START */
+@media only screen and (min-width: 770px) {
+	.abteilung-stadtratsliste .listenplatz {
+		display: inline-block;
+		position: relative;
+		top: -1em;
+		width: 2em;
+		height: 2em;
+		border-radius: 2em;
+		background-color: #e6007e;
+		color: #FFFFFF !important;
+		font-weight: bold;
+		left: -1em;
+		margin-left: -3em	!important;
+		line-height: 2em;
+		letter-spacing: 0.05em;
+		box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.7);
+	}
+}
+/* Personenliste END */
 
 /* Person START */
 @media only screen and (min-width: 770px) {
-  .person .postimg {
+	.person .postimg {
 		padding: 2em 70% 0em 2em;
-  }
+	}
 	
 	.person .content {
 		clear: left;
@@ -124,7 +144,7 @@
 		box-sizing: border-box;
 		line-height: 1.1em;
 		transform: rotate(-15deg);
-  }
+	}
 }
 /* Person END */
 
@@ -137,28 +157,28 @@
 		background-color: #ffee00;
 		padding: 0.5em 1em;
 		color: #46962b;
-  }
+	}
 	#donatenow span::before {
 		content: "\f00d";
 		display: inline;
 		position: relative;
 		font-family: 'FontAwesome';
 		margin-right: 0.5em;
-  }
+	}
 	
 	#teaser .josephbeuys article {
 		box-shadow: none;
 	}
-  #teaser .josephbeuys h1 {
+	#teaser .josephbeuys h1 {
 		display: none;
-  }
+	}
 }
 /* Startseite END */
 
 /* Programm START */
 a.wp-block-button__link {
-  background: #e6007e;
-  border-radius: 0em;
-  font-size: 1em;
+	background: #e6007e;
+	border-radius: 0em;
+	font-size: 1em;
 }
 /* Programm END */

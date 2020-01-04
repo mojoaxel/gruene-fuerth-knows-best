@@ -1,0 +1,164 @@
+/* Menü START */
+@media only screen and (min-width: 770px) {
+	.nav-main {
+		background: rgba(0,0,0,0.3);
+  }
+
+  .nav-main ul.navigation::before {
+		content: "";
+		position: absolute;
+		display: inline-block;
+		top: 50%;
+		left: 15px;
+		transform: translateY(-50%);
+		width: 72%;
+		height: 72%;
+		max-width: 53.7px;
+		max-height: 53.7px;
+		background-image: url(http://www.stadtratsbegruenung.de/wp/wp-content/uploads/2019/12/sonnenblume_auf_transparent_hellesgelb-01.png);
+		background-size: contain;
+		background-repeat: no-repeat;
+  }
+	
+	.nav-main ul.navigation > li:first-of-type {
+		position: absolute;
+		top: 50%;
+		left: 52px;
+		transform: translateY(-50%);
+  }
+	
+	.nav-main ul.navigation > li:first-of-type a {
+		color: #fe0;
+		border-bottom: 0px solid #ffe000;
+	}
+}
+/* Menü END */
+
+/* Startseite START */
+@media only screen and (min-width: 770px) {
+	.page-template-page-home-campaign-php .story-intro > .inner::after {
+		content: 'Weil Wir hier leben';
+		font-size: 1.6rem;
+		padding: 2em 0.5em;
+		display: block;
+		position: absolute;
+		width: 10rem;
+		height: 10rem;
+		right: 20%;
+		top: -180px;
+		background: #e5007d;
+		color: white;
+		font-family: 'Arvo Gruen', Trebuchet, Helvetica Neue, Helvetica, Arial, Verdana, sans-serif;
+		text-transform: uppercase;
+		border-radius: 60%;
+		border-bottom-left-radius: 0;
+		text-align: left;
+		box-sizing: border-box;
+		line-height: 1.6rem;
+		transform: rotate(-15deg);
+		text-shadow: none;
+	}
+	
+	.page-template-page-home-campaign-php .story-intro > .inner::after > .span {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		padding: 1em 0.5em;
+	}
+
+	.page-template-page-home-campaign-php #teaser {
+		display: none;
+	}
+	
+	.page-template-page-home-campaign-php #getinvolved {
+		display: none;
+	}
+}
+/* Startseite END */
+
+/* Termine START */
+@media only screen and (min-width: 770px) {
+	.ics-calendar h3 {
+		margin-top: 1.5rem;
+			border-bottom: 1px solid green;
+	}
+	
+	.ics-calendar h4 {
+		margin-top: 1em;
+		margin-left: 1rem;
+	}
+	.ics-calendar .events {
+		margin-left: 2em
+	}
+}
+/* Termine END */
+
+
+/* Person START */
+@media only screen and (min-width: 770px) {
+  .person .postimg {
+		padding: 2em 70% 0em 2em;
+  }
+	
+	.person .content {
+		clear: left;
+	}
+	
+	.person .placeonlist {
+		display: block;
+		position: absolute;
+		width: 100px;
+		height: 100px;
+		border: 1px solid red;
+		right: -20px;
+		top: -40px;
+		background: #e5007d;
+		color: white;
+		font-size: 100%;
+		font-family: 'Arvo Gruen', Trebuchet, Helvetica Neue, Helvetica, Arial, Verdana, sans-serif;
+		text-transform: uppercase;
+		border-radius: 60%;
+		border-bottom-left-radius: 0;
+		text-align: left;
+		padding: 2.7em 0.5em;
+		box-sizing: border-box;
+		line-height: 1.1em;
+		transform: rotate(-15deg);
+  }
+}
+/* Person END */
+
+/* Startseite START */
+@media only screen and (min-width: 1140px) {
+	#donatenow span {
+		float: right;
+		margin-left: 1em;
+		font-size: 1.3em;
+		background-color: #ffee00;
+		padding: 0.5em 1em;
+		color: #46962b;
+  }
+	#donatenow span::before {
+		content: "\f00d";
+		display: inline;
+		position: relative;
+		font-family: 'FontAwesome';
+		margin-right: 0.5em;
+  }
+	
+	#teaser .josephbeuys article {
+		box-shadow: none;
+	}
+  #teaser .josephbeuys h1 {
+		display: none;
+  }
+}
+/* Startseite END */
+
+/* Programm START */
+a.wp-block-button__link {
+  background: #e6007e;
+  border-radius: 0em;
+  font-size: 1em;
+}
+/* Programm END */

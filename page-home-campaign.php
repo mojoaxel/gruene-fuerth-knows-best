@@ -41,10 +41,8 @@ Template Name: Startseite - Kampagnen
 				
 				
 					<div id="donatenow" class="clearfix">
-						<h2>Spenden</h2>
-						<a href="/spenden#betrag=100">100 €</a>
-						<a href="/spenden#betrag=50">50 €</a>
-						<a href="/spenden#betrag=20">20 €</a>
+						<h2>Kommunalwahl</h2>
+						<span>15. März 2020</span>
 					</div>
 					
 					
@@ -122,7 +120,16 @@ Template Name: Startseite - Kampagnen
     				<h2><span>Termine</span></h2>
     				<div class="tab clearfix">
 	    				
-	    				<?php echo do_shortcode('[wpcalendar anzahl="5" kat="kampagne"]'); ?>
+	    				<?php echo do_shortcode('[ics_calendar
+url="https://Gruen_Kal_Leser:K61-m!fIk-8327@speicherbegruenung.de/remote.php/dav/calendars/Gruen_Kal_Leser/kreisverband_shared_by_FxGsm?export https://Gruen_Kal_Leser:K61-m!fIk-8327@speicherbegruenung.de/remote.php/dav/calendars/Gruen_Kal_Leser/stadtratsfraktion_shared_by_FxGsm?export"
+title="Kreisverband & Stadtratsfraktion"
+color="#46962b #ffee00"
+view="list"
+location="true"
+showendtimes="true"
+toggle="false"
+count="5"
+]'); ?>
 					</div>
 					
 					<h2><span>Presse</span></h2>

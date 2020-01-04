@@ -87,7 +87,8 @@ Template Name: Startseite aktuellen Mitteilungen, Terminen und PMs
 					    
 						<?php 
 							$postsperpage = get_option('posts_per_page');		
-							query_posts('posts_per_page=7&ignore_sticky_posts=1&category_name=presse'); 
+							//query_posts('posts_per_page=7&ignore_sticky_posts=1&category_name=presse'); 
+							query_posts('posts_per_page=7&ignore_sticky_posts=1&category_name=kv-pressemitteilungen'); 
 							?>
 					    		
     		

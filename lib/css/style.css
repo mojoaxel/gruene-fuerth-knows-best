@@ -313,7 +313,18 @@ a img.aligncenter {display: block; margin-left: auto; margin-right: auto}
 		.hentry p {line-height: 1.5em;margin: 0 0 1.2em 0;}
 		p.intro {font-family: 'PT Sans Bold', Trebuchet, Helvetica Neue, Helvetica, Arial, Verdana, sans-serif;font-size:1.1em;}
 		
-				
+		ul.intro {
+			display: inline-block;
+			margin: 0 2em !important;
+			font-family: 'PT Sans Bold', Trebuchet, Helvetica Neue, Helvetica, Arial, Verdana, sans-serif;
+			font-size: 1.1em;
+		}
+		ul.intro > li {
+			margin: 0 1em 0 0 !important;
+		}
+		ul.intro > li:before {
+			content: "•" !important;
+		}
 				
 				
 		/*post header */

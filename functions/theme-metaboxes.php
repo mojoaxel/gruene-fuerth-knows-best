@@ -335,7 +335,7 @@ function kr8mb_pers_position_cb($post)
     <table class="form-table"><tbody>
     <tr>
 	    <th scope="row"><label for="kr8mb_pers_excerpt">Kurzbeschreibung</label></th>
-        <td><textarea name="kr8mb_pers_excerpt" id="kr8mb_pers_excerpt"><?php echo $excerpt; ?></textarea><br><span class="description">Kurzbeschreibung, im Idealfall in 140 Zeichen.</span></td>
+        <td><textarea name="kr8mb_pers_excerpt" id="kr8mb_pers_excerpt"><?php echo $excerpt; ?></textarea><br><span class="description">Kurzbeschreibung. Zeilenumbrüche werden zu Listen.</span></td>
         
         <th scope="row"><label for="kr8mb_pers_motivation">Motivation</label></th>
         <td><textarea name="kr8mb_pers_motivation" id="kr8mb_pers_motivation"><?php echo $motivation; ?></textarea><br><span class="description">Motivation (für Kandidat*innen).</span></td>

@@ -21,9 +21,9 @@
 							    
 							    
 							    							
-							    <h1 class="h2"><?php the_title(); ?></h1>
+							    <h1 class="h1"><?php the_title(); ?></h1>
 							     <?php $amt =  get_post_meta( $post->ID, 'kr8mb_pers_pos_amt', true );   
-								if (! empty ($amt )){ ?><h2 class="h3"><?php echo $amt; ?></h2><?php } ?>
+								if (! empty ($amt )){ ?><h2 class="h2"><?php echo $amt; ?></h2><?php } ?>
 								
 								<?php $listenplatz =  get_post_meta( $post->ID, 'kr8mb_pers_pos_listenplatz', true );
 								if (! empty ($listenplatz )){ ?><div class="placeonlist"><span>Liste 2 Platz <?php echo $listenplatz; ?></span></div><?php } ?>
@@ -56,7 +56,6 @@
 											</div>
 											
 											
-											
 											<?php $excerpt = get_post_meta( $post->ID, 'kr8mb_pers_excerpt', true ); if (! empty ($excerpt )) { 
 												if (strpos($excerpt, "\n") > 0) {
 													echo '<ul class="intro">';
@@ -69,14 +68,16 @@
 												}
 											} ?>
 
-											
+										
 											<?php $anschrift =  get_post_meta( $post->ID, 'kr8mb_pers_contact_anschrift', true );   
 												if (! empty ($anschrift )){ ?><div class="anschrift"><?php echo wpautop( $anschrift, $br = 1 ); ?></div><?php } ?>
+
+											<?php  $motivation =  get_post_meta( $post->ID, 'kr8mb_pers_motivation', true );
+												if (! empty ($motivation )){ ?><blockquote class="motivation"><?php echo $motivation; ?></blockquote><?php } ?>
 											
 											<div class="person content">
 												<?php the_content(); ?>
 											</div>
-											
 											
 											
 										</section>

@@ -145,6 +145,18 @@
 		line-height: 1.1em;
 		transform: rotate(-15deg);
 	}
+
+	.person ul li {
+		margin: 0 !important;
+	}
+
+	.person h3 {
+		color: #46962b !important;
+	}
+
+	.person h4 {
+		margin: 0.5em 0 0.1em 0 !important;
+	}
 }
 /* Person END */
 

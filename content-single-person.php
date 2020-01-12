@@ -26,7 +26,7 @@
 								if (! empty ($amt )){ ?><h2 class="h2"><?php echo $amt; ?></h2><?php } ?>
 								
 								<?php $listenplatz =  get_post_meta( $post->ID, 'kr8mb_pers_pos_listenplatz', true );
-								if (! empty ($listenplatz )){ ?><div class="placeonlist"><span>Liste 2 Platz <?php echo $listenplatz; ?></span></div><?php } ?>
+								if (! empty ($listenplatz )){ ?><div class="placeonlist"><span>Liste 2 Platz <?php echo (int)$listenplatz; ?></span></div><?php } ?>
 								
 						    </header>
 					

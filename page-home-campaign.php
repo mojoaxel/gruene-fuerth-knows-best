@@ -132,7 +132,7 @@ count="5"
 ]'); ?>
 					</div>
 					
-					<h2><span>Presse</span></h2>
+					<h2><span>Anträge</span></h2>
     				<div class="tab clearfix">
 	    				
 						<?php wp_reset_query(); ?>
@@ -141,7 +141,7 @@ count="5"
 					    
 						<?php 
 							$postsperpage = get_option('posts_per_page');		
-							query_posts('posts_per_page=7&ignore_sticky_posts=1&category_name=presse'); 
+							query_posts('posts_per_page=7&ignore_sticky_posts=1&category_name=fraktion-antraege'); 
 							?>
 					    		
     		

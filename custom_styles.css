@@ -213,3 +213,24 @@ a.wp-block-button__link {
 	margin: 0.5em 0 1em 0;
 }
 /* Footer End */
+
+/* YouTube Player START */
+.wp-block-embed-youtube .video-wrapped-play {
+	color: #fe0;
+	text-shadow: none;
+	font-weight: bold;
+}
+.wp-block-embed-youtube .video-wrapped-play:before {
+	content: '\25b6';
+	color: #e5007d;
+	border: none;
+	font-size: 2em;
+	margin-top: -0.5em;
+	background-color: rgba(255,255,255,0.4);
+}
+
+.wp-block-embed-youtube .video-wrapped-play a {
+	color: inherit !important;
+	text-decoration: underline !important;
+}
+/* YouTube Player END */

@@ -108,22 +108,25 @@
 /* Termine END */
 
 /* Personenliste START */
-@media only screen and (min-width: 770px) {
+.abteilung-stadtratsliste .listenplatz {
+	display: inline-block;
+	position: relative;
+	top: -1em;
+	width: 2em;
+	height: 2em;
+	border-radius: 2em;
+	background-color: #e6007e;
+	color: #FFFFFF !important;
+	font-weight: bold;
+	left: -1em;
+	margin-left: -3em	!important;
+	line-height: 2em;
+	letter-spacing: 0.05em;
+	box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.7);
+}
+@media (max-width: 600px) {
 	.abteilung-stadtratsliste .listenplatz {
-		display: inline-block;
-		position: relative;
-		top: -1em;
-		width: 2em;
-		height: 2em;
-		border-radius: 2em;
-		background-color: #e6007e;
-		color: #FFFFFF !important;
-		font-weight: bold;
-		left: -1em;
-		margin-left: -3em	!important;
-		line-height: 2em;
-		letter-spacing: 0.05em;
-		box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.7);
+		left: 1em;
 	}
 }
 /* Personenliste END */
@@ -208,7 +211,7 @@
 		line-height: 1em;
 		border-bottom-left-radius: 100%;
 		text-align: right;
-		padding: 0.9em 0.5em 1em 1em;
+		padding: 0.5em 0.5em 1.5em 1.5em;
 		font-family: 'Arvo Gruen', Trebuchet, Helvetica Neue, Helvetica, Arial, Verdana, sans-serif;
 		text-transform: uppercase;
 	}

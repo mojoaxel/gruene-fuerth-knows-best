@@ -36,6 +36,15 @@
 		margin-left: 9em;
 	}
 }
+@media (max-width: 600px) {
+	#nav-mobile {
+		padding-left: 1em !important;
+	}
+
+	.widget {
+		border-bottom: none !important;
+	}
+}
 /* Menü END */
 
 /* Startseite START */
@@ -78,6 +87,10 @@
 	.page-template-page-home-campaign-php #getinvolved {
 		display: none;
 	}
+	
+	.widget.widget_media_image > a > img {
+		box-shadow: 5px 5px 10px rgba(0,0,0,0.2);
+	}
 }
 /* Startseite END */
 
@@ -99,22 +112,25 @@
 /* Termine END */
 
 /* Personenliste START */
-@media only screen and (min-width: 770px) {
+.abteilung-stadtratsliste .listenplatz {
+	display: inline-block;
+	position: relative;
+	top: -1em;
+	width: 2em;
+	height: 2em;
+	border-radius: 2em;
+	background-color: #e6007e;
+	color: #FFFFFF !important;
+	font-weight: bold;
+	left: -1em;
+	margin-left: -3em	!important;
+	line-height: 2em;
+	letter-spacing: 0.05em;
+	box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.7);
+}
+@media (max-width: 600px) {
 	.abteilung-stadtratsliste .listenplatz {
-		display: inline-block;
-		position: relative;
-		top: -1em;
-		width: 2em;
-		height: 2em;
-		border-radius: 2em;
-		background-color: #e6007e;
-		color: #FFFFFF !important;
-		font-weight: bold;
-		left: -1em;
-		margin-left: -3em	!important;
-		line-height: 2em;
-		letter-spacing: 0.05em;
-		box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.7);
+		left: 1em;
 	}
 }
 /* Personenliste END */
@@ -123,6 +139,16 @@
 @media only screen and (min-width: 770px) {
 	.person .postimg {
 		padding: 2em 70% 0em 2em;
+	}
+
+	.wahlkreis {
+			font-family: 'Arvo Regular', 'Arvo Gruen', Trebuchet, Helvetica Neue, Helvetica, Arial, Verdana, sans-serif;
+		font-size: large;
+		color: #e5007d;
+}
+	
+	ul.intro {
+		width: 50%;
 	}
 	
 	.person .content {
@@ -161,6 +187,63 @@
 	.person h4 {
 		margin: 0.5em 0 0.1em 0 !important;
 	}
+	
+	.person h5 {
+		margin: 0.7em 0 0 0 !important;
+	}
+}
+@media (max-width: 600px) {
+	.person .placeonlist {
+		color: #e5007d;
+	}
+
+	.single-person blockquote.motivation {
+		max-width: 100%;
+		margin: 1em 0;
+	}
+
+	.person .placeonlist {
+		color: white;
+		position: absolute;
+		top: 0;
+		right: 0;
+		background: #e5007d;
+		display: block;
+		font-size: 1.2em;
+		width: 5em;
+		height: 3em;
+		line-height: 1em;
+		border-bottom-left-radius: 100%;
+		text-align: right;
+		padding: 0.5em 0.5em 1.5em 1.5em;
+		font-family: 'Arvo Gruen', Trebuchet, Helvetica Neue, Helvetica, Arial, Verdana, sans-serif;
+		text-transform: uppercase;
+	}
+
+	.person h3 {
+		font-size: larger;
+		color: #46962b !important;
+	}
+
+	.person h4 {
+		margin-top: 1em !important;
+	}
+
+	.hentry ul li {
+		margin: 0 0 0 0 !important;
+	}
+
+	blockquote {
+		margin: 1em 0;
+	}
+	blockquote p:before {
+		content: "«";
+		display: inline-block;
+	}
+	blockquote p:after {
+		content: "»";
+		display: inline-block;
+	}
 }
 /* Person END */
 
@@ -196,7 +279,12 @@ a.wp-block-button__link {
 	background: #e6007e;
 	border-radius: 0em;
 	font-size: 1em;
-  margin: 0.5em 0;
+	font-weight: bold;
+	margin: 0.5em 0;
+}
+
+.c-accordion__title {
+	margin-top: 1em;
 }
 /* Programm END */
 
@@ -234,3 +322,27 @@ a.wp-block-button__link {
 	text-decoration: underline !important;
 }
 /* YouTube Player END */
+
+/* Themenseite START */
+@media only screen and (min-width: 770px) {
+	.wp-block-media-text .wp-block-media-text__content {
+		padding: 0;
+	}
+
+		.wp-block-media-text .wp-block-media-text__content {
+		padding-left: 1em;
+		box-sizing: border-box;
+}
+	
+	.wp-block-media-text .wp-block-media-text__content h2 {
+		margin: 1em 0 0.3em 0;
+		font-size: 1.2em;
+	}
+}
+@media (max-width: 600px) {
+	.wp-block-pb-accordion-item h2 {
+		margin: 1em 0 0.3em 0;
+		font-size: 1.2em;
+	}
+}
+/* Themenseite END */

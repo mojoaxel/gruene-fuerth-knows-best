@@ -69,7 +69,7 @@ Template Name: Story mit aktuellen Tabs
 					    <?php endwhile; ?>	
 					   
 					
-					<p><span class="button"><a href="archiv">Alle Nachrichten im Archiv »</a></span></p>
+					<p><span class="button"><a href="/category/aktuelles/">Alle Nachrichten im Archiv »</a></span></p>
 			
 			
     				</div>

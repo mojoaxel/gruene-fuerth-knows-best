@@ -358,6 +358,19 @@ article.page.type-page.hentry h2.thema-header {
 	text-decoration: underline !important;
 }
 
+.video-wrapped {
+	max-width: 100% !important;
+}
+
+@media (max-width: 600px) {
+	.wp-block-embed {
+		margin: 1em 0 !important;
+	}
+
+	.video-wrapped {
+		width: 100% !important;
+	}
+}
 /* YouTube Player END */
 
 /* Themenseite START */
@@ -382,5 +395,4 @@ article.page.type-page.hentry h2.thema-header {
 	}
 }
 */
-
 /* Themenseite END */

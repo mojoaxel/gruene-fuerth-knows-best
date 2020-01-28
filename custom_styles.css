@@ -35,6 +35,19 @@
 	.nav-main ul.navigation>li:nth-child(2) {
 		margin-left: 9em;
 	}
+
+	.nav-main .menu-item:last-child a {
+		visibility: hidden;
+	}
+
+	.nav-main .menu-item:last-child a:before {
+		content: "\f002";
+		visibility: visible;
+		font-family: 'FontAwesome';
+		color: #fff;
+		font-size: 21px;
+		margin-top: -1px;
+	}
 }
 
 @media (max-width: 600px) {
@@ -50,6 +63,7 @@
 		padding-left: 1.5em;
 		color: #fe0;
 	}
+
 	.header-mobile h2::before {
 		content: "";
 		position: absolute;

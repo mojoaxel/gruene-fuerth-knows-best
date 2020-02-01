@@ -1,7 +1,7 @@
 /* Menü START */
 @media only screen and (min-width: 770px) {
 	.nav-main {
-		background: rgba(0,0,0,0.3);
+		background: rgba(0, 0, 0, 0.3);
 	}
 
 	.nav-main ul.navigation::before {
@@ -15,27 +15,41 @@
 		height: 72%;
 		max-width: 53.7px;
 		max-height: 53.7px;
-		background-image: url(http://www.stadtratsbegruenung.de/wp/wp-content/uploads/2019/12/sonnenblume_auf_transparent_hellesgelb-01.png);
+		background-image: url(//www.gruene-fuerth.de/wp-content/uploads/2019/12/sonnenblume_auf_transparent_hellesgelb-01.png);
 		background-size: contain;
 		background-repeat: no-repeat;
 	}
-	
-	.nav-main ul.navigation > li:first-of-type {
+
+	.nav-main ul.navigation>li:first-of-type {
 		position: absolute;
 		top: 50%;
 		left: 52px;
 		transform: translateY(-50%);
 	}
-	
-	.nav-main ul.navigation > li:first-of-type a {
+
+	.nav-main ul.navigation>li:first-of-type a {
 		color: #fe0;
 		border-bottom: 0px solid #ffe000;
 	}
-	
-	.nav-main ul.navigation > li:nth-child(2) {
+
+	.nav-main ul.navigation>li:nth-child(2) {
 		margin-left: 9em;
 	}
+
+	.nav-main .menu-item-type-custom:last-child a {
+		visibility: hidden;
+	}
+
+	.nav-main .menu-item-type-custom:last-child a:before {
+		content: "\f002";
+		visibility: visible;
+		font-family: 'FontAwesome';
+		color: #fff;
+		font-size: 21px;
+		margin-top: -1px;
+	}
 }
+
 @media (max-width: 600px) {
 	#nav-mobile {
 		padding-left: 1em !important;
@@ -44,13 +58,33 @@
 	.widget {
 		border-bottom: none !important;
 	}
+
+	.header-mobile h2 {
+		padding-left: 1.5em;
+		color: #fe0;
+	}
+
+	.header-mobile h2::before {
+		content: "";
+		position: absolute;
+		display: inline-block;
+		top: 50%;
+		transform: translateY(-50%);
+		width: 1.5em;
+		height: 1.5em;
+		background-image: url(//www.gruene-fuerth.de/wp-content/uploads/2019/12/sonnenblume_auf_transparent_hellesgelb-01.png);
+		background-size: contain;
+		background-repeat: no-repeat;
+		margin-left: -1.6em;
+	}
 }
+
 /* Menü END */
 
 /* Startseite START */
 @media only screen and (min-width: 770px) {
-	.page-template-page-home-campaign-php .story-intro > .inner::after {
-		content: 'Weil Wir hier leben';
+	.page-template-page-home-campaign-php .story-intro>.inner::after {
+		content: "Weil Wir hier leben";
 		font-size: 1.6rem;
 		padding: 2em 0.5em;
 		display: block;
@@ -62,7 +96,8 @@
 		top: -180px;
 		background: #e5007d;
 		color: white;
-		font-family: 'Arvo Gruen', Trebuchet, Helvetica Neue, Helvetica, Arial, Verdana, sans-serif;
+		font-family: "Arvo Gruen", Trebuchet, Helvetica Neue, Helvetica, Arial,
+			Verdana, sans-serif;
 		text-transform: uppercase;
 		border-radius: 60%;
 		border-bottom-left-radius: 0;
@@ -72,8 +107,8 @@
 		transform: rotate(-15deg);
 		text-shadow: none;
 	}
-	
-	.page-template-page-home-campaign-php .story-intro > .inner::after > .span {
+
+	.page-template-page-home-campaign-php .story-intro>.inner::after>.span {
 		position: absolute;
 		bottom: 0;
 		left: 0;
@@ -83,32 +118,35 @@
 	.page-template-page-home-campaign-php #teaser {
 		display: none;
 	}
-	
+
 	.page-template-page-home-campaign-php #getinvolved {
 		display: none;
 	}
-	
-	.widget.widget_media_image > a > img {
-		box-shadow: 5px 5px 10px rgba(0,0,0,0.2);
+
+	.widget.widget_media_image>a>img {
+		box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
 	}
 }
+
 /* Startseite END */
 
 /* Termine START */
 @media only screen and (min-width: 770px) {
 	.ics-calendar h3 {
 		margin-top: 1.5rem;
-			border-bottom: 1px solid green;
+		border-bottom: 1px solid green;
 	}
-	
+
 	.ics-calendar h4 {
 		margin-top: 1em;
 		margin-left: 1rem;
 	}
+
 	.ics-calendar .events {
-		margin-left: 2em
+		margin-left: 2em;
 	}
 }
+
 /* Termine END */
 
 /* Personenliste START */
@@ -120,19 +158,21 @@
 	height: 2em;
 	border-radius: 2em;
 	background-color: #e6007e;
-	color: #FFFFFF !important;
+	color: #ffffff !important;
 	font-weight: bold;
 	left: -1em;
-	margin-left: -3em	!important;
+	margin-left: -3em !important;
 	line-height: 2em;
 	letter-spacing: 0.05em;
-	box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.7);
+	box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.7);
 }
+
 @media (max-width: 600px) {
 	.abteilung-stadtratsliste .listenplatz {
 		left: 1em;
 	}
 }
+
 /* Personenliste END */
 
 /* Person START */
@@ -142,19 +182,20 @@
 	}
 
 	.wahlkreis {
-			font-family: 'Arvo Regular', 'Arvo Gruen', Trebuchet, Helvetica Neue, Helvetica, Arial, Verdana, sans-serif;
+		font-family: "Arvo Regular", "Arvo Gruen", Trebuchet, Helvetica Neue,
+			Helvetica, Arial, Verdana, sans-serif;
 		font-size: large;
 		color: #e5007d;
-}
-	
+	}
+
 	ul.intro {
 		width: 50%;
 	}
-	
+
 	.person .content {
 		clear: left;
 	}
-	
+
 	.person .placeonlist {
 		display: block;
 		position: absolute;
@@ -165,7 +206,8 @@
 		background: #e5007d;
 		color: white;
 		font-size: 100%;
-		font-family: 'Arvo Gruen', Trebuchet, Helvetica Neue, Helvetica, Arial, Verdana, sans-serif;
+		font-family: "Arvo Gruen", Trebuchet, Helvetica Neue, Helvetica, Arial,
+			Verdana, sans-serif;
 		text-transform: uppercase;
 		border-radius: 60%;
 		border-bottom-left-radius: 0;
@@ -187,11 +229,12 @@
 	.person h4 {
 		margin: 0.5em 0 0.1em 0 !important;
 	}
-	
+
 	.person h5 {
 		margin: 0.7em 0 0 0 !important;
 	}
 }
+
 @media (max-width: 600px) {
 	.person .placeonlist {
 		color: #e5007d;
@@ -216,7 +259,8 @@
 		border-bottom-left-radius: 100%;
 		text-align: right;
 		padding: 0.5em 0.5em 1.5em 1.5em;
-		font-family: 'Arvo Gruen', Trebuchet, Helvetica Neue, Helvetica, Arial, Verdana, sans-serif;
+		font-family: "Arvo Gruen", Trebuchet, Helvetica Neue, Helvetica, Arial,
+			Verdana, sans-serif;
 		text-transform: uppercase;
 	}
 
@@ -236,15 +280,18 @@
 	blockquote {
 		margin: 1em 0;
 	}
+
 	blockquote p:before {
 		content: "«";
 		display: inline-block;
 	}
+
 	blockquote p:after {
 		content: "»";
 		display: inline-block;
 	}
 }
+
 /* Person END */
 
 /* Startseite START */
@@ -257,21 +304,24 @@
 		padding: 0.5em 1em;
 		color: #46962b;
 	}
+
 	#donatenow span::before {
 		content: "\f00d";
 		display: inline;
 		position: relative;
-		font-family: 'FontAwesome';
+		font-family: "FontAwesome";
 		margin-right: 0.5em;
 	}
-	
+
 	#teaser .josephbeuys article {
 		box-shadow: none;
 	}
+
 	#teaser .josephbeuys h1 {
 		display: none;
 	}
 }
+
 /* Startseite END */
 
 /* Programm START */
@@ -286,20 +336,37 @@ a.wp-block-button__link {
 .c-accordion__title {
 	margin-top: 1em;
 }
-/* Programm END */
 
+article.page.type-page.hentry h2.thema-header {
+	font-weight: bold;
+	text-transform: uppercase;
+	color: #e6007e;
+	margin-top: 1.5em;
+}
+
+@media (max-width: 600px) {
+	article.page.type-page.hentry h2.thema-header {
+		font-size: 1.5em;
+		margin-top: 1.2em;
+	}
+}
+
+/* Programm END */
 
 /* Footer Start */
 #footer {
-		background: none !important;
-		background-color: #0a321e !important;
+	background: none !important;
+	background-color: #0a321e !important;
 }
+
 #footer .widget {
 	color: white;
 }
+
 #footer h4 {
 	margin: 0.5em 0 1em 0;
 }
+
 /* Footer End */
 
 /* YouTube Player START */
@@ -308,41 +375,41 @@ a.wp-block-button__link {
 	text-shadow: none;
 	font-weight: bold;
 }
+
 .wp-block-embed-youtube .video-wrapped-play:before {
-	content: '\25b6';
+	content: "\25b6";
 	color: #e5007d;
 	border: none;
 	font-size: 2em;
 	margin-top: -0.5em;
-	background-color: rgba(255,255,255,0.4);
+	background-color: rgba(255, 255, 255, 0.4);
 }
 
 .wp-block-embed-youtube .video-wrapped-play a {
 	color: inherit !important;
 	text-decoration: underline !important;
 }
+
+.video-wrapped {
+	max-width: 100% !important;
+}
+
+@media (max-width: 600px) {
+	.wp-block-embed {
+		margin: 1em 0 !important;
+	}
+
+	.video-wrapped {
+		width: 100% !important;
+	}
+}
+
 /* YouTube Player END */
 
 /* Themenseite START */
-@media only screen and (min-width: 770px) {
-	.wp-block-media-text .wp-block-media-text__content {
-		padding: 0;
-	}
+h1.landing-title {
+	background-size: contain;
+	padding-right: 45px;
+}
 
-		.wp-block-media-text .wp-block-media-text__content {
-		padding-left: 1em;
-		box-sizing: border-box;
-}
-	
-	.wp-block-media-text .wp-block-media-text__content h2 {
-		margin: 1em 0 0.3em 0;
-		font-size: 1.2em;
-	}
-}
-@media (max-width: 600px) {
-	.wp-block-pb-accordion-item h2 {
-		margin: 1em 0 0.3em 0;
-		font-size: 1.2em;
-	}
-}
 /* Themenseite END */

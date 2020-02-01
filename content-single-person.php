@@ -34,8 +34,10 @@
 										
 										<section class="entry-content clearfix">
 											
+											<?php $wahlkreis =  get_post_meta( $post->ID, 'kr8mb_pers_pos_wahlkreis', true ); 
+												if (! empty ($wahlkreis )){ ?><p class="short wahlkreis"><?php echo $wahlkreis; ?></p>
+											<?php } ?>
 											
-																		
 											<div class="socialprofile">
 											
 												
@@ -51,8 +53,10 @@
 											
 											<?php $twitter =  get_post_meta( $post->ID, 'kr8mb_pers_contact_twitter', true );   
 												if (! empty ($twitter )){ ?><a href="https://twitter.com/<?php echo $twitter; ?>"><span class="fa fa-twitter"></span></a><?php } ?>
+
+											<?php $instagram =  get_post_meta( $post->ID, 'kr8mb_pers_contact_instagram', true );
+												if (! empty ($instagram )){ ?><a href="<?php echo $instagram; ?>"><span class="fa fa-instagram"></span></a><?php } ?>
 											
-																						
 											</div>
 											
 											

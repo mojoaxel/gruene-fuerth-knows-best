@@ -17,11 +17,14 @@
 											 	$count=0;
 											 	if ($posttags) {
 											 		?><p class="subhead"><?php
-											 		foreach($posttags as $tag) {
-												 		$count++;
-												 			if (1 == $count) {
-												 		echo '' .$tag->name. ' '; 
-										  			} }
+														$separator = ' | ';
+														if (!empty($posttags)) {
+																foreach ($posttags as $tag) {
+																		$output .= '<a href="' . get_tag_link($tag->term_id) . '">' . $tag->name . '</a>' . $separator;
+																}
+																$output = trim($output, $separator);
+																echo $output;
+														}
 										  		?></p><?php	
 												}?>							 							
 										 <h2><a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a></h2> 

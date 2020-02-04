@@ -113,7 +113,7 @@ Template Name: Startseite - Kampagnen
 					    <?php endwhile; ?>	
 					   
 					
-					<p><span class="button"><a href="/category/aktuelles/">Alle Nachrichten im Archiv »</a></span></p>
+					<p><span class="button"><a href="/category/aktuelles/">Mehr Aktuelles...</a></span></p>
 			
 			
     				</div>
@@ -141,14 +141,15 @@ count="5"
 					    
 						<?php 
 							$postsperpage = get_option('posts_per_page');		
-							query_posts('posts_per_page=7&ignore_sticky_posts=1&category_name=fraktion-antraege'); 
+							query_posts('posts_per_page=15&ignore_sticky_posts=1&category_name=fraktion-antraege'); 
 							?>
 					    		
     		
     					<?php while ( have_posts() ) : the_post(); ?>
-					    	<?php get_template_part( 'content-list-small', get_post_format() ); ?>
+					    	<?php get_template_part( 'content-list', get_post_format() ); ?>
 					    <?php endwhile; ?>	
 					   
+							<p><span class="button"><a href="/category/fraktion-antraege/">Mehr Anträge...</a></span></p>
 
 					</div>
 					

@@ -6,7 +6,10 @@
 
 								 <article id="post-<?php the_ID(); ?>" <?php post_class('clearfix'); ?> role="article">
 								    <?php if ( has_post_thumbnail() ): ?>
-											<a href="<?php the_permalink(); ?>" class="postimglist"><?php the_post_thumbnail('titelbild');  ?></a>
+											<a href="<?php the_permalink(); ?>" class="postimglist">
+												<span class="hidden"><?php the_title_attribute(); ?></span>
+												<span aria-hidden="true"><?php the_post_thumbnail('titelbild');  ?></span>
+											</a>
 									<?php endif; ?>								 
 								 
 									 <header class="article-header">

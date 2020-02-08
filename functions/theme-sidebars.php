@@ -113,7 +113,7 @@ function kr8_wpsearch($form) {
         $form = '<section class="suche"><h6 class="unsichtbar">Suchformular</h6><form role="search" method="get" class="searchform" action="' . home_url( '/' ) . '" >
     <span class="searchlabel"><label for="search">Der Suchbegriff nach dem die Website durchsucht werden soll.</label></span>
     <input type="text" name="s" class="seachphrase" value="' . get_search_query() . '" placeholder="Suchbegriff eingeben ..." aria-labelledby="suche searchlabel"/>
-    <button type="submit" class="button-submit">
+    <button type="submit" class="button-submit" aria-label="Submitt">
                 <span class="fa fa-search"></span> <span class="text">Suchen</span>
             </button>
     </form></section>';
@@ -553,6 +553,7 @@ class kr8_teaserarticle extends WP_Widget
 			if(!empty($img))
 			{
 				if(!empty($url)) { echo '<a href="'. $url .'" title="'.$title.'" class="postimglist">';}
+				echo '<span class="hidden">'. $title .'</span>';
 				echo '<img src="'. $img .'" alt="'. $title .'" class="wp-post-image">';
 				if(!empty($url)) { echo '</a>';}
 			}

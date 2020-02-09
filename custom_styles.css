@@ -296,6 +296,10 @@
 	}
 }
 
+.person:not(.abteilung-stadtratsliste) .placeonlist {
+	display: none;
+}
+
 /* Person END */
 
 /* Startseite START */

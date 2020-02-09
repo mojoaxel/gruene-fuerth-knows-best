@@ -128,6 +128,10 @@
 	}
 }
 
+.subhead>.posttag:not(:last-child):after {
+    content:' | ';
+}
+
 /* Startseite END */
 
 /* Termine START */

@@ -128,7 +128,7 @@ view="list"
 location="true"
 showendtimes="true"
 toggle="false"
-count="5"
+count="15"
 ]'); ?>
 					</div>
 					

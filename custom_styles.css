@@ -1,5 +1,7 @@
 /* Menü START */
 @media only screen and (min-width: 770px) {
+	.fullpage { min-height: 80vh;}
+
 	.nav-main {
 		background: rgba(0, 0, 0, 0.3);
 	}
@@ -129,7 +131,6 @@
 
 	.page-template-page-home-campaign-php:after {
 		content: '';
-		opacity: 0;
 		position: absolute;
 		bottom: 2em;
 		right: 2em;

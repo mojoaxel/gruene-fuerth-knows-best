@@ -37,27 +37,6 @@ Template Name: Startseite - Kampagnen
 			<?php endif; ?>
 			
 			
-			<div class="inner wrap clearfix">	
-				
-				
-					<div id="donatenow" class="clearfix">
-						<h2>Kommunalwahl</h2>
-						<span>15. März 2020</span>
-					</div>
-					
-					
-				<div id="getmore">
-						<h2>Erfahre mehr</h2>
-						
-						<div class="sidebar clearfix involvebar" role="complementary">
-						<?php dynamic_sidebar('campaigntwo'); ?>
-						</div>
-						
-				</div>	
-						
-				
-			</div>
-			
 
 					
 					
@@ -113,7 +92,7 @@ Template Name: Startseite - Kampagnen
 					    <?php endwhile; ?>	
 					   
 					
-					<p><span class="button"><a href="/category/aktuelles/">Mehr Aktuelles...</a></span></p>
+					<p><span class="button"><a href="/category/aktuelles/">Alle Nachrichten im Archiv »</a></span></p>
 			
 			
     				</div>
@@ -141,15 +120,14 @@ count="15"
 					    
 						<?php 
 							$postsperpage = get_option('posts_per_page');		
-							query_posts('posts_per_page=15&ignore_sticky_posts=1&category_name=fraktion-antraege'); 
+							query_posts('posts_per_page=7&ignore_sticky_posts=1&category_name=fraktion-antraege'); 
 							?>
 					    		
     		
     					<?php while ( have_posts() ) : the_post(); ?>
-					    	<?php get_template_part( 'content-list', get_post_format() ); ?>
+					    	<?php get_template_part( 'content-list-small', get_post_format() ); ?>
 					    <?php endwhile; ?>	
 					   
-							<p><span class="button"><a href="/category/fraktion-antraege/">Mehr Anträge...</a></span></p>
 
 					</div>
 					

@@ -204,6 +204,7 @@ h3.ics-calendar-label {
 		clear: left;
 	}
 
+	/*
 	.person .placeonlist {
 		display: block;
 		position: absolute;
@@ -225,6 +226,7 @@ h3.ics-calendar-label {
 		line-height: 1.1em;
 		transform: rotate(-15deg);
 	}
+	*/
 
 	.person ul li {
 		margin: 0 !important;
@@ -253,6 +255,7 @@ h3.ics-calendar-label {
 		margin: 1em 0;
 	}
 
+	/*
 	.person .placeonlist {
 		color: white;
 		position: absolute;
@@ -271,6 +274,7 @@ h3.ics-calendar-label {
 			Verdana, sans-serif;
 		text-transform: uppercase;
 	}
+	*/
 
 	.person h3 {
 		font-size: larger;

@@ -54,14 +54,14 @@ Template Name: Startseite - Kampagnen
 			
 				
 				
-				<div id="getinvolved">
+				<!-- div id="getinvolved">
 					<h2>Werde aktiv</h2>
 					
 					<div class="sidebar clearfix involvebar" role="complementary">
 					<?php dynamic_sidebar('campaignone'); ?>
 					</div>
 					
-				</div>	
+				</div -->
 			
 
 			<div class="ninecol first clearfix" role="main">

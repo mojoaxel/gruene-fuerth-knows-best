@@ -123,6 +123,10 @@
 		display: none;
 	}
 
+	.page-template-page-home-campaign-php div[role="main"] {
+		padding-top: 3em;
+	}
+
 	.widget.widget_media_image>a>img {
 		box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
 	}
